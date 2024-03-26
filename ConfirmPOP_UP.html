@@ -1,0 +1,22 @@
+<!DOCTYPE html lang="en">
+<head>
+<title> Java Script Confirm pop-up </title>
+</head>
+
+<body>
+ <p> This is a JavaScrpit program which shows confirm pop-up </p>
+ <button onclick="myFunction()"> Click Here </button>
+ <p id="demo"> </p>
+ <script>
+    function myFunction(){
+      var text;
+      if(confirm("Click this button!")){
+        text="You clicked ok";
+      }else{
+         text ="you clicked cancel";
+      }
+      document.getElementById("demo").innerHTML=text;
+    } 
+ </script>
+</body>
+</html>

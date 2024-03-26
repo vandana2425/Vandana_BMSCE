@@ -1,0 +1,25 @@
+<!DOCTYPE html lang="en">
+<head>
+<title> Java Script Eaxmple </title>
+</head>
+
+<body>
+   <p> Customer Registration </p>
+    <p id="customer"> </p>
+   <button onClick="myFunction()"> Register </botton>
+
+   <script>
+     function myFunction(){
+       var text;
+       var customer = prompt("Please enter your name: ");
+       if(customer==null || customer==""){
+          text="User couldn't be registered";
+       }
+       else{
+          text="Successfully registered " + customer;
+       }
+      document.getElementById("customer").innerHTML=text;
+     }
+   </script>
+</body>
+</html>
